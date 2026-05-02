@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Specialist courses and fitness training at DoBu Martial Arts." />
+    <title>Courses | DoBu Martial Arts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="/index.html">Do<span>Bu</span></a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav id="site-nav" class="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="/index.html">Home</a></li>
+            <li><a class="nav__link" href="/classes.html">Classes</a></li>
+            <li><a class="nav__link" href="/pricing.html">Pricing</a></li>
+            <li><a class="nav__link nav__link--active" href="/courses.html">Courses</a></li>
+            <li><a class="nav__link" href="/instructors.html">Instructors</a></li>
+            <li><span class="auth-badge" data-auth-email hidden></span></li>
+            <li><a class="nav__link nav__link--cta" data-nav="login" href="/auth.html">Login</a></li>
+            <li hidden><a class="nav__link" data-nav="dashboard" href="/dashboard.html">Dashboard</a></li>
+            <li hidden><a class="nav__link" href="#" data-nav="logout">Log out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <h1>Courses &amp; fitness</h1>
+          <p>Short specialist programmes and gym access beyond regular class memberships.</p>
+        </div>
+      </header>
+
+      <section class="section section--alt" aria-labelledby="courses-heading">
+        <div class="container">
+          <h2 id="courses-heading" class="section__title">Specialist offerings</h2>
+          <p class="section__lead">Build practical skills and supporting fitness with our add-on services.</p>
+          <div class="card-grid card-grid--3">
+            <article class="card card--pricing">
+              <h3 class="card__title">Self-defence course</h3>
+              <p class="price-tag">£180</p>
+              <p class="card__text">Six-week structured course covering awareness, boundaries, and practical responses.</p>
+            </article>
+            <article class="card card--pricing">
+              <h3 class="card__title">Fitness room</h3>
+              <p class="price-tag">£6<small> per visit</small></p>
+              <p class="card__text">Drop-in access to our training floor and equipment between coached sessions.</p>
+            </article>
+            <article class="card card--pricing">
+              <h3 class="card__title">Personal training</h3>
+              <p class="price-tag">£35<small>/hour</small></p>
+              <p class="card__text">One-to-one sessions with our fitness team for strength, mobility, or weight goals.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="next-heading">
+        <div class="container text-center">
+          <h2 id="next-heading" class="section__title">Book through reception</h2>
+          <p class="section__lead" style="margin-inline: auto">
+            Enrolment for courses and PT is handled in person or by phone. Members can also ask at the front desk
+            after class.
+          </p>
+          <a class="btn btn--secondary" href="mailto:hello@dobumartialarts.co.uk">Email us to reserve a spot</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <h3>DoBu Martial Arts</h3>
+          <p>
+            128 Example Street<br />
+            London, E1 1AA<br />
+            United Kingdom
+          </p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <address>
+            <p>Phone: <a href="tel:+442012345678">020 1234 5678</a></p>
+            <p>Email: <a href="mailto:hello@dobumartialarts.co.uk">hello@dobumartialarts.co.uk</a></p>
+          </address>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>&copy; <span id="year"></span> DoBu Martial Arts. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

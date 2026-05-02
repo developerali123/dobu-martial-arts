@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in or register for DoBu Martial Arts member access." />
+    <title>Login &amp; Register | DoBu Martial Arts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page-auth">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="/index.html">Do<span>Bu</span></a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav id="site-nav" class="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="/index.html">Home</a></li>
+            <li><a class="nav__link" href="/classes.html">Classes</a></li>
+            <li><a class="nav__link" href="/pricing.html">Pricing</a></li>
+            <li><a class="nav__link" href="/courses.html">Courses</a></li>
+            <li><a class="nav__link" href="/instructors.html">Instructors</a></li>
+            <li><span class="auth-badge" data-auth-email hidden></span></li>
+            <li><a class="nav__link nav__link--cta nav__link--active" data-nav="login" href="/auth.html">Login</a></li>
+            <li hidden><a class="nav__link" data-nav="dashboard" href="/dashboard.html">Dashboard</a></li>
+            <li hidden><a class="nav__link" href="#" data-nav="logout">Log out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-page">
+      <div class="auth-page__layout container">
+        <aside class="auth-page__aside" aria-labelledby="auth-aside-heading">
+          <p class="auth-page__eyebrow">Member access</p>
+          <h1 id="auth-aside-heading" class="auth-page__title">Welcome back to the mat</h1>
+          <p class="auth-page__intro">
+            Sign in to manage your membership, or create an account to get started with classes at DoBu.
+          </p>
+          <ul class="auth-page__highlights">
+            <li>
+              <span class="auth-page__check" aria-hidden="true">✓</span>
+              Secure sign-in with email
+            </li>
+            <li>
+              <span class="auth-page__check" aria-hidden="true">✓</span>
+              Access your personal dashboard
+            </li>
+            <li>
+              <span class="auth-page__check" aria-hidden="true">✓</span>
+              Same account for all DoBu online features
+            </li>
+          </ul>
+        </aside>
+
+        <div class="auth-page__main">
+          <div class="auth-card">
+            <div class="auth-card__head">
+              <h2 class="auth-card__heading visually-hidden">Account</h2>
+              <div class="auth-tab-group" role="tablist" aria-label="Log in or register">
+                <button
+                  type="button"
+                  class="auth-tab is-active"
+                  data-tab="login"
+                  role="tab"
+                  id="tab-login"
+                  aria-selected="true"
+                  aria-controls="panel-login"
+                >
+                  Log in
+                </button>
+                <button
+                  type="button"
+                  class="auth-tab"
+                  data-tab="register"
+                  role="tab"
+                  id="tab-register"
+                  aria-selected="false"
+                  aria-controls="panel-register"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+
+            <div id="auth-global-message" class="form-message" hidden></div>
+
+            <div id="panel-login" class="auth-panel" role="tabpanel" aria-labelledby="tab-login">
+              <form id="form-login" class="auth-form" novalidate>
+                <div class="form-group form-group--auth">
+                  <label for="login-email">Email address</label>
+                  <input
+                    id="login-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <p class="form-error" data-error="login-email"></p>
+                </div>
+                <div class="form-group form-group--auth">
+                  <label for="login-password">Password</label>
+                  <input
+                    id="login-password"
+                    name="password"
+                    type="password"
+                    autocomplete="current-password"
+                    placeholder="••••••••"
+                    required
+                  />
+                  <p class="form-error" data-error="login-password"></p>
+                </div>
+                <button type="submit" class="btn btn--primary btn--auth-submit">Log in</button>
+              </form>
+            </div>
+
+            <div id="panel-register" class="auth-panel" role="tabpanel" aria-labelledby="tab-register" hidden>
+              <form id="form-register" class="auth-form" novalidate>
+                <p class="auth-form__hint">Choose an email and a password of at least 6 characters.</p>
+                <div class="form-group form-group--auth">
+                  <label for="register-email">Email address</label>
+                  <input
+                    id="register-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <p class="form-error" data-error="register-email"></p>
+                </div>
+                <div class="form-group form-group--auth">
+                  <label for="register-password">Password</label>
+                  <input
+                    id="register-password"
+                    name="password"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="Create a strong password"
+                    required
+                  />
+                  <p class="form-error" data-error="register-password"></p>
+                </div>
+                <button type="submit" class="btn btn--primary btn--auth-submit">Create account</button>
+              </form>
+            </div>
+          </div>
+
+          <p class="auth-page__footer-link">
+            <a href="/index.html">← Back to home</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <h3>DoBu Martial Arts</h3>
+          <p>
+            128 Example Street<br />
+            London, E1 1AA<br />
+            United Kingdom
+          </p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <address>
+            <p>Phone: <a href="tel:+442012345678">020 1234 5678</a></p>
+            <p>Email: <a href="mailto:hello@dobumartialarts.co.uk">hello@dobumartialarts.co.uk</a></p>
+          </address>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>&copy; <span id="year"></span> DoBu Martial Arts. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

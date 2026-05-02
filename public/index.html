@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DoBu Martial Arts — expert coaching in jiu-jitsu, karate, judo, and Muay Thai. Join our community in London."
+    />
+    <title>DoBu Martial Arts | Home</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="/index.html">Do<span>Bu</span></a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav id="site-nav" class="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link nav__link--active" href="/index.html">Home</a></li>
+            <li><a class="nav__link" href="/classes.html">Classes</a></li>
+            <li><a class="nav__link" href="/pricing.html">Pricing</a></li>
+            <li><a class="nav__link" href="/courses.html">Courses</a></li>
+            <li><a class="nav__link" href="/instructors.html">Instructors</a></li>
+            <li><span class="auth-badge" data-auth-email hidden></span></li>
+            <li><a class="nav__link nav__link--cta" data-nav="login" href="/auth.html">Login</a></li>
+            <li hidden><a class="nav__link" data-nav="dashboard" href="/dashboard.html">Dashboard</a></li>
+            <li hidden><a class="nav__link" href="#" data-nav="logout">Log out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero__grid">
+          <div>
+            <p class="hero__eyebrow">Discipline · Strength · Community</p>
+            <h1 class="hero__title">Train smarter at DoBu Martial Arts</h1>
+            <p class="hero__text">
+              World-class coaching across jiu-jitsu, karate, judo, and Muay Thai — from first timers to
+              competitors. Build confidence, fitness, and technique in a supportive, professional gym.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="/auth.html">Join Now</a>
+              <a class="btn btn--secondary" href="/classes.html">View Classes</a>
+            </div>
+          </div>
+          <aside class="hero__visual" aria-label="Featured gym imagery">
+            <figure class="hero__figure">
+              <img
+                src="/images/martial-art.jpg"
+                alt="Martial arts training at DoBu — discipline and technique in action"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </figure>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section why-dobu section--alt" aria-labelledby="why-dobu-heading">
+        <div class="container">
+          <h2 id="why-dobu-heading" class="section__title">Why DoBu</h2>
+          <p class="section__lead why-dobu__lead">
+            One gym, four martial arts, and coaches who invest in your progress — whether you’re stepping on the
+            mat for the first time or preparing for competition.
+          </p>
+          <div class="why-dobu__panel">
+            <div class="why-dobu__stats" role="list">
+              <div class="why-dobu__stat" role="listitem">
+                <span class="why-dobu__stat-value">4</span>
+                <span class="why-dobu__stat-label">Disciplines</span>
+              </div>
+              <div class="why-dobu__stat" role="listitem">
+                <span class="why-dobu__stat-value">6+</span>
+                <span class="why-dobu__stat-label">Coaches</span>
+              </div>
+              <div class="why-dobu__stat" role="listitem">
+                <span class="why-dobu__stat-value">7</span>
+                <span class="why-dobu__stat-label">Days / week</span>
+              </div>
+            </div>
+            <p class="why-dobu__text">
+              Structured kids’ programs, daily open mat and personal practice windows, plus private tuition when
+              you want focused attention — everything is designed so you can train consistently and safely.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="services-heading">
+        <div class="container">
+          <h2 id="services-heading" class="section__title">What we offer</h2>
+          <p class="section__lead">
+            Whether you want self-defence, competition prep, or general fitness, we meet you where you are.
+          </p>
+          <div class="card-grid card-grid--3">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">⚡</div>
+              <h3 class="card__title">Striking &amp; grappling</h3>
+              <p class="card__text">
+                Stand-up and ground game: Muay Thai, judo, jiu-jitsu, and traditional karate — taught with
+                clear progression.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🛡️</div>
+              <h3 class="card__title">Youth programs</h3>
+              <p class="card__text">
+                Dedicated kids’ classes build focus, respect, and coordination in a safe, encouraging
+                environment.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">💪</div>
+              <h3 class="card__title">Strength &amp; recovery</h3>
+              <p class="card__text">
+                On-site fitness coaching and sports science support so you can train hard and recover well.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="home-timetable-heading">
+        <div class="container">
+          <h2 id="home-timetable-heading" class="section__title">Weekly timetable</h2>
+          <p class="section__lead">
+            Full weekly grid — same schedule as in our printed timetable. For class descriptions see
+            <a href="/classes.html">Classes</a>.
+          </p>
+          <div class="timetable-panel">
+            <h3 class="timetable-panel__title">Martial arts class timetable</h3>
+            <div class="table-wrap">
+              <table class="timetable">
+                <thead>
+                  <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Monday</th>
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">Wednesday</th>
+                    <th scope="col">Thursday</th>
+                    <th scope="col">Friday</th>
+                    <th scope="col">Saturday</th>
+                    <th scope="col">Sunday</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>06:00 – 07:30</td>
+                    <td>Jiu-jitsu</td>
+                    <td>Karate</td>
+                    <td>Judo</td>
+                    <td>Jiu-jitsu</td>
+                    <td>Muay Thai</td>
+                    <td class="cell-empty" aria-label="No class">&nbsp;</td>
+                    <td class="cell-empty" aria-label="No class">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>08:00 – 10:00</td>
+                    <td>Muay Thai</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                    <td>Jiu-jitsu</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                  </tr>
+                  <tr>
+                    <td>10:30 – 12:00</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                    <td>Private tuition</td>
+                    <td>Judo</td>
+                    <td>Karate</td>
+                  </tr>
+                  <tr>
+                    <td>13:00 – 14:30</td>
+                    <td>Open mat/ personal practice</td>
+                    <td>Open mat/ personal practice</td>
+                    <td>Open mat/ personal practice</td>
+                    <td>Open mat/ personal practice</td>
+                    <td>Open mat/ personal practice</td>
+                    <td>Karate</td>
+                    <td>Judo</td>
+                  </tr>
+                  <tr>
+                    <td>15:00 – 17:00</td>
+                    <td>Kids jiu-jitsu</td>
+                    <td>Kids judo</td>
+                    <td>Kids karate</td>
+                    <td>Kids jiu-jitsu</td>
+                    <td>Kids judo</td>
+                    <td>Muay Thai</td>
+                    <td>Jiu-jitsu</td>
+                  </tr>
+                  <tr>
+                    <td>17:30 – 19:00</td>
+                    <td>Karate</td>
+                    <td>Muay Thai</td>
+                    <td>Judo</td>
+                    <td>Jiu-jitsu</td>
+                    <td>Muay Thai</td>
+                    <td class="cell-empty" aria-label="No class">&nbsp;</td>
+                    <td class="cell-empty" aria-label="No class">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>19:00 – 21:00</td>
+                    <td>Jiu-jitsu</td>
+                    <td>Judo</td>
+                    <td>Jiu-jitsu</td>
+                    <td>Karate</td>
+                    <td>Private tuition</td>
+                    <td class="cell-empty" aria-label="No class">&nbsp;</td>
+                    <td class="cell-empty" aria-label="No class">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="instructors-heading">
+        <div class="container">
+          <h2 id="instructors-heading" class="section__title">Coaching team</h2>
+          <p class="section__lead">
+            Learn from experienced black belts and accredited coaches. <a href="/instructors.html">Meet the full team</a>.
+          </p>
+          <div class="card-grid card-grid--3">
+            <article class="card instructor-card">
+              <h3 class="card__title">Mauricio Gomez</h3>
+              <p class="instructor-card__role">Gym owner / head martial arts coach</p>
+              <p class="instructor-card__quals">
+                All disciplines; 4th Dan judo, 3rd Dan jiu-jitsu, 1st Dan karate; accredited Muay Thai coach.
+              </p>
+            </article>
+            <article class="card instructor-card">
+              <h3 class="card__title">Sarah Nova</h3>
+              <p class="instructor-card__role">Assistant martial arts coach</p>
+              <p class="instructor-card__quals">5th Dan karate.</p>
+            </article>
+            <article class="card instructor-card">
+              <h3 class="card__title">Traci Santiago</h3>
+              <p class="instructor-card__role">Fitness coach</p>
+              <p class="instructor-card__quals">
+                BSc Sports Science; strength and conditioning for combat athletes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="testimonials-heading">
+        <div class="container">
+          <h2 id="testimonials-heading" class="section__title">What members say</h2>
+          <p class="section__lead">Real feedback from people who train with us.</p>
+          <div class="card-grid card-grid--3">
+            <blockquote class="card">
+              <p class="testimonial">
+                “The timetable fits around work and the coaches actually remember your name. Best gym I’ve joined.”
+              </p>
+              <footer class="testimonial__author">— Alex M., jiu-jitsu</footer>
+            </blockquote>
+            <blockquote class="card">
+              <p class="testimonial">
+                “My daughter’s confidence has grown so much in the kids’ judo class. Professional and welcoming.”
+              </p>
+              <footer class="testimonial__author">— Priya S., parent</footer>
+            </blockquote>
+            <blockquote class="card">
+              <p class="testimonial">
+                “Muay Thai here is technical, not just a cardio class. I’m learning every session.”
+              </p>
+              <footer class="testimonial__author">— Jordan T., Muay Thai</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="section__title">Get in touch</h2>
+          <p class="section__lead">
+            Questions about memberships or a trial class? Send a message (demo form — not connected to a server).
+          </p>
+          <form id="contact-form" class="contact-form form-panel" novalidate>
+            <div id="contact-form-message" class="form-message" hidden></div>
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <h3>DoBu Martial Arts</h3>
+          <p>
+            128 Example Street<br />
+            London, E1 1AA<br />
+            United Kingdom
+          </p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <address>
+            <p>Phone: <a href="tel:+442012345678">020 1234 5678</a></p>
+            <p>Email: <a href="mailto:hello@dobumartialarts.co.uk">hello@dobumartialarts.co.uk</a></p>
+          </address>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>&copy; <span id="year"></span> DoBu Martial Arts. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
